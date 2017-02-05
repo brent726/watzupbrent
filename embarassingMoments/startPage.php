@@ -7,14 +7,11 @@
 <body>
 	<?php
 
-		echo	"Guess the riddle right: <br>";
-		echo    "See H side by side you are inside";
-
 		$ans=@$_POST['answer'];
 		$submit=@$_POST['Submit'];
-
+		echo	"Guess the riddle right: <br>";
+		echo    "See H side by side you are inside";
 		
-
 		if(strtolower($ans)=="church")
 		{
 				session_start();
