@@ -24,10 +24,10 @@
         <nav id="access" class="access" role="navigation">
               <div id="menu" class="menu">
               	<ul id="tiny">
-              	<li><a href="index.html">HOME</a>
-      				<li><a href="profile.html">PORTFOLIO</a></li>
-      				<li><a href="schedule.html">SCHEDULE</a></li>
-              		<li><a href="activities.html">ACTIVITIES</a></li>
+              	<li><a href="../index.html">HOME</a>
+      				<li><a href="../profile.html">PORTFOLIO</a></li>
+      				<li><a href="../schedule.html">SCHEDULE</a></li>
+              		<li><a href="../activities.html">ACTIVITIES</a></li>
       			</ul>
       		</div>
         </nav>
@@ -40,11 +40,9 @@
 
   	 <!-- begin article -->
     <article class="page hentry">
-    <header class="entry-header">
     
-    </header>
     <!-- .entry-header -->
-    <div class="entry-content">
+    <div class="entry-content" >
 	<?php
 				session_start();
 				$username=$_SESSION['username'];
@@ -61,7 +59,9 @@
 	<body>
 
 		<form action="destroy.php" method="POST">
-			<input type="submit" name="destroy" value="GET ME OUT"></input>
+      <div align="center">
+			 <input type="submit" name="destroy" value="GET ME OUT"></input>
+      </div>
 		</form>
 
 		<?php 
@@ -77,15 +77,17 @@
   <!-- end article -->
   </div><!-- #content -->
 </div><!-- #primary -->
-		<div class="row-text-center pad-top">
+		<div class="row-text-center pad-top" align="center">
 			<div class="col-md-4 col-sm-4 col-xs-12">
 				<img src="1a.png" class="img=responsive" alt=""/>
 			</div>
 		</div>
 		<br>
-		<a href="p1.php" class="button">1</a>
-		<a href="p2.php" class="button">2</a>
-		<a href="p3.php" class="button">3</a>
+    <div align="center">
+  		<a href="p1.php" class="button">1</a>
+  		<a href="p2.php" class="button">2</a>
+  		<a href="p3.php" class="button">3</a>
+    </div>
 		<div id="site-generator">
             Copyright 2016 - Brent Matthew Yap
           </div>
