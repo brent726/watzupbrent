@@ -1,6 +1,6 @@
 <?php
 // Create connection
-$link = mysqli_connect("localhost", "root", "", "phonebook");
+$link = mysqli_connect("sql311.byethost7.com","b7_19332195","brentmatthewyap726","b7_19332195_phonebook");
  
 // Check connection
 if($link === false){
@@ -19,8 +19,8 @@ $color= $_POST["color"];
 $email = mysqli_real_escape_string($link,$_POST["email"]);
 $about = mysqli_real_escape_string($link,$_POST["about"]);
 // attempt insert query execution
-$sql = "INSERT INTO phonebook (fname,mname,lname,gender,bday,email,contact,color,about) 
-		VALUES ('$firstname','$middlename','$lastname','$gender','$birthday','$email','$contactnum','$color','$about')";
+$sql = "INSERT INTO phonebook (fname,mname,lname,gender,age, bday,email,contact,color,about) 
+		VALUES ('$firstname','$middlename','$lastname','$gender', '$age', '$birthday','$email','$contactnum','$color','$about')";
 
 if(mysqli_query($link, $sql)){
     echo '<script language="javascript">';

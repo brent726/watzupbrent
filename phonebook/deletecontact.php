@@ -1,6 +1,6 @@
 <?php
 // Create connection
-$link = mysqli_connect("localhost", "root", "", "phonebook");
+$link = mysqli_connect("sql311.byethost7.com","b7_19332195","brentmatthewyap726","b7_19332195_phonebook");
  
 // Check connection
 if($link === false){

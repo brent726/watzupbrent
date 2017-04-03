@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
+-- version 4.5.2
+-- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 23, 2017 at 02:03 PM
--- Server version: 10.1.21-MariaDB
--- PHP Version: 5.6.30
+-- Host: localhost
+-- Generation Time: Mar 24, 2017 at 04:28 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -45,7 +45,11 @@ CREATE TABLE `phonebook` (
 --
 
 INSERT INTO `phonebook` (`ID`, `fname`, `mname`, `lname`, `gender`, `age`, `bday`, `email`, `contact`, `color`, `about`) VALUES
-(1, 'brent', 'xl', 'yap', 'M', 0, '1990-07-01', 'brent', 12345, 'blue', 'hi');
+(1, 'brent', 'xl', 'yap', 'M', 0, '1990-07-01', 'brent', 12345, 'blue', 'hi'),
+(2, 'sd', 'middlename', 're', 'M', 0, '1991-12-12', 'ba@la', 2412, 'color', 'bds'),
+(3, 'gs', 'middlename', '', 'M', 0, '0000-00-00', '', 0, 'color', ''),
+(4, 'ew', 'as', 'ty', 'M', 0, '2332-01-31', 'bw@11', 555555, 'Violet', 'addds'),
+(5, 'as', 'te', 'er', 'M', 0, '8123-07-06', 'baa@pl', 654333, 'Blue', 'sdss');
 
 --
 -- Indexes for dumped tables
@@ -57,6 +61,15 @@ INSERT INTO `phonebook` (`ID`, `fname`, `mname`, `lname`, `gender`, `age`, `bday
 ALTER TABLE `phonebook`
   ADD PRIMARY KEY (`ID`);
 
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `phonebook`
+--
+ALTER TABLE `phonebook`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
